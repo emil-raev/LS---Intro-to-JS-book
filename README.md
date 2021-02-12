@@ -1,1 +1,2 @@
-# LS---Intro-to-JS-book
+# LS Intro-to-JS-book
+
