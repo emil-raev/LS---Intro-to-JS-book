@@ -1,6 +1,9 @@
-A runtime environment is an execution environment that lets an application program access system resources and provides the tools the application needs to operate. The compiler/interpreter and the operating system's APIs together make up a runtime environment. 
+The strict equality operator, also known as the identity operator
 
-An Application Programming Interface (API) describes the scheme and format that a programmer can use to securely access resources, with the operating system acting as an intermediary.
+The non-strict equality operator, also known as the loose equality operator
 
-JavaScript in the browser has two main purposes: 1) to programmatically alter web pages based on user actions; and, 2) to exchange messages with a server over a network.
+ the values 0 (all 3 variants), '', undefined, null, and NaN as though they were false
 
+ ```
+ let isOk = !!(foo || bar);
+ ```

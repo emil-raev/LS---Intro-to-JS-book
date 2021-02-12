@@ -1,6 +1,9 @@
-A runtime environment is an execution environment that lets an application program access system resources and provides the tools the application needs to operate. The compiler/interpreter and the operating system's APIs together make up a runtime environment. 
+It's important to realize that Object.freeze only works one level deep in the array. If your array contains nested arrays or other objects, the values inside them can still be changed unless they are also frozen
 
-An Application Programming Interface (API) describes the scheme and format that a programmer can use to securely access resources, with the operating system acting as an intermediary.
+forEach always returns undefined.
 
-JavaScript in the browser has two main purposes: 1) to programmatically alter web pages based on user actions; and, 2) to exchange messages with a server over a network.
+If you change an array's length property to a new, larger value, the array expands to the new size. The new elements do not get initialized, they show up as empty items until you try to use their value:
 
+While the length property of Array includes unset values in the count, Object.keys only counts those values that have been set to some value.
+
+reverse(), sort(cb) - Note that the array is reversed/sorted in place, and no copy is made.

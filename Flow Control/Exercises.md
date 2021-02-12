@@ -1,37 +1,45 @@
-1.
-```
-mkdir my_folder
-cd my_folder
-touch one.js two.js
-echo 'console.log("this is file one")' > one.js
-```
+
 2.
 ```
-cd ..
-rm -R my_folder
+funcation evenOrOdd (num) {
+  if (num % 2) {
+    console.log('odd');
+  } else {
+    console.log('even');
+  }
+}
 ```
 3.
 ```
-mkdir preparation_exercises
-cd preparation_exercises
-touch foo.js
-nano foo.js
-
-node foo.js
+funcation evenOrOdd (num) {
+  if (!Number.isInteger(num)) {
+    console.log('Error');
+    return;
+  }
+  if (num % 2) {
+    console.log('odd');
+  } else {
+    console.log('even');
+  }
+}
 ```
-4.
+7.
 **node REPL**
 ```
->let foo = "bar";
-undefined
->console.log(foo);
-undefined
->foo;
-'bar'
+function toCaps(string){
+  return string.length > 10 ? string.toUpperCase() : string;
+}
 ```
-5.
-- String.prototype
-- Object
-- String
-- String.prototype , Array.prototype
-
+8.
+```
+function range(number){
+  if (number < 0) {
+    console.log(`${number} is less than 0`);
+  } else if (number < 50) {
+    console.log(`${number} is between 0 and 50`);
+  } else if (number < 0) {
+    console.log(`${number} is between 51 and 100`);
+  } else {
+    console.log(`${number} is greater than 100`);
+  }
+```
